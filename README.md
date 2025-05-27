@@ -1,28 +1,11 @@
 Explore [these topic](./assets/topics.md) ideas for your quiz app or choose your own, avoiding placeholder text.
-
 ![Quiz App Overview](./assets/overview.png)
-
 ## Setup
-
-To begin, perform the following tasks:
-
-- Ensure that the CSS file is loaded in the HTML document.
-
-## Resources
-
 Download the required [Icons](https://lucide.dev/icons/) and save them in an "assets" folder within your app's main directory.
-
 ## Deploying Your Project
-
 🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your repository's documentation (`docs/deployment-github-pages.md`) for detailed instructions.
-
 ## Tasks
-
 ### 1. Home Page
-
-As you already know from previous challenges, as developers we want to always finish a feature and
-add it to our main branch, instead of starting 3 different features and none of them work. This is
-why the first step to success is to start with the homepage.
 
 - Create the following layout:
 
