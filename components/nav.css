@@ -1,0 +1,12 @@
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: beige;
+    z-index: 111;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
