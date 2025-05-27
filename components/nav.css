@@ -24,7 +24,7 @@ nav ul li {
     overflow: hidden;
 }
 
-nav ul li#nav-favorite {
+nav ul li#nav-profile {
     background-image: url(/assets/icons/shield-user.svg);
 }
 /* just messing around now */
@@ -35,5 +35,5 @@ nav ul li:nth-child(even){
 nav ul li.active {
     background-color: white;
     box-shadow: 0 0 3rem 1rem white;
-    border-radius: 50rem;
+    border-radius: 1rem;
 }
