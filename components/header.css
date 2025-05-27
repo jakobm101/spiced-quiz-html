@@ -5,4 +5,5 @@ header {
     text-align: center;
     border: 5px solid burlywood;
     border-radius: 0;
+    z-index: 111px;
 }
