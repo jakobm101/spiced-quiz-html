@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz: Web Dev</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz</h1>
+      <h2>Answer three questions to pass</h2>
+    </header>
+    <nav>
+      <ul>
+        <li id="nav-home"><a href="index.html">Home</a></li>
+        <li id="nav-favorite"><a href="bookmarks.html">Favorites</a></li>
+        <li id="nav-profile"><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="quiz">
+        <article class="quiz__card">
+          <h2 class="quiz__card__question">What is Jakob's favorite fruit?</h2>
+          <button class="showanswer">Show answer</button>
+          <h2 class="answer" hidden>Banana</h2>
+          <article class="quiz__card__tags">
+            <button class="quiz__card__tags__tag">Personal</button
+            ><button class="quiz__card__tags__tag">Smalltalk</button
+            ><button class="quiz__card__tags__tag">Jakob</button>
+          </article>
+          <button class="card__bookmarktoggle">Bookmark</button>
+        </article>
+        <article class="quiz__card">
+          <h2 class="quiz__card__question">What is Jakob's favorite colour?</h2>
+          <button class="showanswer">Show answer</button>
+          <h2 class="answer" hidden>Black</h2>
+          <article class="quiz__card__tags">
+            <button class="quiz__card__tags__tag">Personal</button
+            ><button class="quiz__card__tags__tag">Smalltalk</button
+            ><button class="quiz__card__tags__tag">Jakob</button>
+          </article>
+          <button class="card__bookmarktoggle">Bookmark</button>
+        </article>
+        <article class="quiz__card">
+          <h2 class="quiz__card__question">What is the meaning of life</h2>
+          <button class="showanswer">Show answer</button>
+          <h2 class="answer" hidden>42</h2>
+          <article class="quiz__card__tags">
+            <button class="quiz__card__tags__tag">Personal</button>
+            <button class="quiz__card__tags__tag">Smalltalk</button>
+            <button class="quiz__card__tags__tag">Jakob</button>
+          </article>
+          <button class="card__bookmarktoggle">Bookmark</button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
