@@ -24,6 +24,8 @@ body {
 
 button {
     cursor: pointer;
+    border: black 1px solid;
+    border-radius: 1rem;
 }
 
 header, nav, main {
