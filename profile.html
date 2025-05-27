@@ -15,7 +15,9 @@
       <ul>
         <li id="nav-home"><a href="index.html">Home</a></li>
         <li id="nav-favorite"><a href="bookmarks.html">Favorites</a></li>
-        <li class="active" id="nav-profile"><a href="profile.html">Profile</a></li>
+        <li class="active" id="nav-profile">
+          <a href="profile.html">Profile</a>
+        </li>
       </ul>
     </nav>
     <main>
@@ -34,11 +36,17 @@
         </article>
         <aside class="profile__statistic">
           <article class="profile__statistic__value">
-            <img src="/assets/icons/bookmark-check.svg" alt="Bookmarks checked" />
+            <img
+              src="/assets/icons/bookmark-check.svg"
+              alt="Bookmarks checked"
+            />
             <h2>12</h2>
           </article>
           <article class="profile__statistic__value">
-            <img src="/assets/icons/shield-question.svg" alt="Questions created" />
+            <img
+              src="/assets/icons/shield-question.svg"
+              alt="Questions created"
+            />
             <h2>12</h2>
           </article>
         </aside>
@@ -47,11 +55,11 @@
         <h2>Settings</h2>
         <article class="settings__darkmode">
           <h3>Dark Mode</h3>
-          <button
-            class="settings__darkmode__button settings__darkmode__button--active"
-            aria-label="Dark Mode Toggle"
-          />
-          <lever/>
+          <!-- Rounded switch -->
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
         </article>
       </section>
     </main>
