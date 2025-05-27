@@ -1,8 +1,8 @@
 
  /* Preview */
 * {
-    width: 50%;
-    height: 50%;
+    min-width: 5rem;
+    min-height: 5rem;
     border: tomato 3px solid;
     border-radius: 25px;
 }
@@ -10,5 +10,11 @@
 * {
     padding: 0;
     margin: 0;
+    list-style-type: none;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    height: 100%;
 }
