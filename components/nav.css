@@ -19,7 +19,8 @@ nav ul li {
     background-size: cover;
     height: 4rem;
     width: 4rem;
-    text-indent: 100%;
+    margin: 1rem;
+    text-indent: 200%;
     overflow: hidden;
 }
 
@@ -29,4 +30,10 @@ nav ul li#nav-favorite {
 /* just messing around now */
 nav ul li:nth-child(even){
     background-image: url(/assets/icons/book-heart.svg);
+}
+
+nav ul li.active {
+    background-color: white;
+    box-shadow: 0 0 3rem 0 white;
+    border-radius: 50rem;
 }
