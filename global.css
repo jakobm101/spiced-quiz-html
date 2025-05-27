@@ -3,8 +3,8 @@
 * {
     /* min-width: 5rem; */
     /* min-height: 5rem; */
-    border: grey 1px solid;
-    border-radius: 25px;
+    /* border: grey 1px solid; */
+    /* border-radius: 25px; */
 }
 
 * {
@@ -15,6 +15,17 @@
 }
 
 body {
-    margin: 0 auto;
     height: 100%;
+    width: 600px;
+    margin: auto;
+    background-color: darkslategray;
+    box-shadow: 0 0 10rem 0 darkorchid;
+}
+
+button {
+    cursor: pointer;
+}
+
+header, nav, main {
+    max-width: 600px;
 }
