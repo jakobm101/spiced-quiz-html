@@ -7,7 +7,7 @@
   gap: 2rem;
 }
 
-.card {
+.quiz__card {
   width: 500px;
   height: 500px;
   box-shadow: inset 0 0 2rem cornflowerblue;
@@ -20,7 +20,7 @@
   border-radius: 2rem;
 }
 
-.question {
+.quiz__card__question {
   text-align: center;
   font-size: 2rem;
 }
@@ -40,7 +40,7 @@
   box-shadow: inset 0 0 1rem 0 cornflowerblue, 0 2px 1rem 0 hotpink;
 }
 
-.tags {
+.quiz__card__tags {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
@@ -48,18 +48,18 @@
   gap: 5px;
 }
 
-.tag {
+.quiz__card__tags__tag {
   border-radius: 3px;
   border: none;
   padding: 2px 12px;
   box-shadow: 2px 2px 4px 0 cornflowerblue;
 }
-.tag:hover {
+.quiz__card__tags__tag:hover {
   transform: translate(1px, 1px);
   box-shadow: 1px 1px 4px 0 cornflowerblue;
 }
 
-.bookmarktoggle {
+.card__bookmarktoggle {
   position: absolute;
   top: -1rem;
   right: -1rem;
@@ -75,9 +75,8 @@
   border: none;
   border-radius: 100vw;
 }
-.bookmarktoggle:hover {
+.card__bookmarktoggle:hover {
   /* box-shadow: 0 0 1rem 0 white, inset 0 0 1rem white; */
   height: 3.1rem;
   width: 3.1rem;
 }
-
