@@ -15,34 +15,45 @@
       <ul>
         <li id="nav-home"><a href="index.html">Home</a></li>
         <li id="nav-favorite"><a href="bookmarks.html">Favorites</a></li>
-        <li id="nav-profile"><a href="profile.html">Profile</a></li>
+        <li class="active" id="nav-profile"><a href="profile.html">Profile</a></li>
       </ul>
     </nav>
     <main>
       <section class="profile">
-        <img src="assets/profile.jpg" alt="Profile Image">
+        <img src="assets/profile.jpg" alt="Profile Image" />
         <h2>Max Doe</h2>
         <article class="profile__about">
           <h3>About me</h3>
-          <p>Lorem Ipsum Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-          <aside class="profile__statistic">
-            <article class="profile__statistic__questions">
-              <img src="" alt="">
-              <h2>12</h2>
-            </article>
-            <article class="profile__statistic__questions">
-              <img src="" alt="">
-              <h2>12</h2>
-            </article>
-          </aside>
+          <p>
+            Lorem Ipsum Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet.
+          </p>
+        </article>
+        <aside class="profile__statistic">
+          <article class="profile__statistic__value">
+            <img src="/assets/icons/bookmark-check.svg" alt="Bookmarks checked" />
+            <h2>12</h2>
+          </article>
+          <article class="profile__statistic__value">
+            <img src="/assets/icons/shield-question.svg" alt="Questions created" />
+            <h2>12</h2>
+          </article>
+        </aside>
+      </section>
+      <section class="settings">
+        <h2>Settings</h2>
+        <article class="settings__darkmode">
+          <h3>Dark Mode</h3>
+          <button
+            class="settings__darkmode__button settings__darkmode__button--active"
+            aria-label="Dark Mode Toggle"
+          />
+          <lever/>
         </article>
       </section>
-        <section class="settings">
-          <article class="settings__darkmode">
-            <h2>Dark Mode</h2>
-            <button class="settings__darkmode__button settings__darkmode__button--active" aria-label="Dark Mode Toggle" />
-          </article>
-        </section>
     </main>
   </body>
 </html>

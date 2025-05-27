@@ -3,7 +3,12 @@
   padding: 2rem;
   display: grid;
   justify-items: stretch;
-  grid-template: repeat(8,50px) / repeat(5,16%); 
+  grid-template: repeat(8, 50px) / repeat(5, 16%);
+  background-color: aliceblue;
+}
+
+.profile * {
+  /* border: tomato 1px solid; */
 }
 
 .profile > img {
@@ -11,14 +16,57 @@
   border-radius: 100rem;
   /* width: 200px; */
   height: auto;
-  border: 2px solid black
 }
 .profile > h2 {
   grid-area: 2/3/2/6;
   font-size: 2rem;
-  border: 2px solid black;
 }
 .profile__about {
-    grid-area: 5/1/10/6;
-    border: 1px solid red;
+  grid-area: 5/1/8/6;
+  text-overflow: ellipsis;
 }
+
+.profile__statistic {
+  grid-area: 8/1/9/6;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.profile__statistic__value {
+  width: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.settings {
+  background: aliceblue;
+  display: flex;
+  position: relative;
+  flex-flow: column wrap;
+  min-height: 20rem;
+  padding: 2rem;
+}
+.settings * {
+  /* border: 1px solid tomato; */
+}
+
+.settings > h2 {
+  margin-bottom: 1rem;
+}
+
+.settings__darkmode {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings__darkmode > h3 {
+  display: inline;
+}
+.settings__darkmode__button {
+  width: 3rem;
+  height: 1rem;
+}
+
