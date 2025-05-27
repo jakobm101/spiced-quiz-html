@@ -4,9 +4,29 @@ nav {
     width: 100%;
     background-color: beige;
     z-index: 111;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
 }
 
 nav ul {
     display: flex;
     justify-content: space-evenly;
+    padding: 1rem;
+}
+
+nav ul li {
+    background-image: url(/assets/icons/shield-question.svg);
+    background-position: center;
+    background-size: cover;
+    height: 4rem;
+    width: 4rem;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+nav ul li:last-child {
+    background-image: url(/assets/icons/shield-user.svg);
+}
+/* just messing around now */
+nav ul li:nth-child(even){
+    background-image: url(/assets/icons/book-heart.svg);
 }
