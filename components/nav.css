@@ -23,7 +23,7 @@ nav ul li {
     overflow: hidden;
 }
 
-nav ul li:last-child {
+nav ul li#nav-favorite {
     background-image: url(/assets/icons/shield-user.svg);
 }
 /* just messing around now */
