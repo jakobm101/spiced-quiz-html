@@ -1,4 +1,5 @@
 .quiz {
+  padding: 20px 0 120px 0;
   background-color: aliceblue;
   display: flex;
   flex-flow: column wrap;
@@ -52,11 +53,17 @@
   border-radius: 3px;
   border: none;
   padding: 2px 12px;
-  box-shadow: 2px 2px 4px 0 cornflowerblue;
+  box-shadow: 1px 1px 2px 0 cornflowerblue;
+  color: #666;
 }
 .quiz__card__tags__tag:hover {
   transform: translate(1px, 1px);
   box-shadow: 1px 1px 4px 0 cornflowerblue;
+  background-color: bisque;
+}
+
+.quiz__card__tags__tag::before {
+  content: "# ";
 }
 
 .card__bookmarktoggle {

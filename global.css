@@ -1,11 +1,11 @@
 
  /* Preview */
-* {
+/* * { */
     /* min-width: 5rem; */
     /* min-height: 5rem; */
     /* border: grey 1px solid; */
     /* border-radius: 25px; */
-}
+/* } */
 
 * {
     padding: 0;
@@ -30,4 +30,5 @@ button {
 
 header, nav, main {
     max-width: 600px;
+    z-index: 1;
 }
