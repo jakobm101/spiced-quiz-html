@@ -10,22 +10,28 @@
 
 .card {
     width: 500px;
+    height: 500px;
     box-shadow: inset 0 0 2rem cornflowerblue;
     padding: 2rem;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
 }
 
 .question {
     text-align: center;
+    font-size: 2rem;
 }
 
 .showanswer {
     width: 300px;
-    font-size: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    box-shadow: inset 0 0 1rem 0 cornflowerblue, 0 5px 1rem 0 hotpink;
 }
 
 .tags {
