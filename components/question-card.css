@@ -87,3 +87,7 @@
   height: 3.1rem;
   width: 3.1rem;
 }
+
+.card__bookmarktoggle--active {
+  background-image: url(/assets/icons/bookmark-check.svg);
+}
