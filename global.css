@@ -12,6 +12,7 @@
     margin: 0;
     list-style-type: none;
     box-sizing: border-box;
+    transition: 0.5s ease-in-out;
 }
 
 body {
@@ -26,6 +27,10 @@ button {
     cursor: pointer;
     border: black 1px solid;
     border-radius: 1rem;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 header, nav, main {
