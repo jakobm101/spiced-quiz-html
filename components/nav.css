@@ -34,6 +34,6 @@ nav ul li:nth-child(even){
 
 nav ul li.active {
     background-color: white;
-    box-shadow: 0 0 3rem 0 white;
+    box-shadow: 0 0 3rem 1rem white;
     border-radius: 50rem;
 }
