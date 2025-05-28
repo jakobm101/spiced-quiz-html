@@ -1,39 +1,47 @@
-
- /* Preview */
+/* Preview */
 /* * { */
-    /* min-width: 5rem; */
-    /* min-height: 5rem; */
-    /* border: grey 1px solid; */
-    /* border-radius: 25px; */
+/* min-width: 5rem; */
+/* min-height: 5rem; */
+/* border: grey 1px solid; */
+/* border-radius: 25px; */
 /* } */
 
 * {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    box-sizing: border-box;
-    transition: 0.5s ease-in-out;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
 }
 
 body {
-    height: 100%;
-    width: 600px;
-    margin: auto;
-    background-color: darkslategray;
-    box-shadow: 0 0 10rem 0 darkorchid;
+  height: 100%;
+  width: 600px;
+  margin: auto;
+  background-color: #555;
+  box-shadow: 0 0 10rem 0 darkorchid;
+  background-image: linear-gradient(
+      88deg,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 10px);
+  background-size: 32px 32px; /* █ Tile-Größe */
 }
 
 button {
-    cursor: pointer;
-    border: black 1px solid;
-    border-radius: 1rem;
+  cursor: pointer;
+  border: black 1px solid;
+  border-radius: 1rem;
 }
 
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-header, nav, main {
-    max-width: 600px;
-    z-index: 1;
+header,
+nav,
+main {
+  max-width: 600px;
+  z-index: 1;
 }

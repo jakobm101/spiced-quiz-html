@@ -4,7 +4,7 @@ nav {
   width: 100%;
   background-color: beige;
   z-index: 111;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2rem 0 darkslategray, inset 0 -5px 2cap 0 chartreuse;
 }
 
 nav ul {
