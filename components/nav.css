@@ -22,7 +22,7 @@ nav ul li {
   border-radius: 10px;
 }
 nav ul li a {
-  background-image: url(/assets/icons/shield-question.svg);
+  background-image: url(./assets/icons/shield-question.svg);
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -33,11 +33,11 @@ nav ul li a {
 }
 
 nav ul li#nav-profile a {
-  background-image: url(/assets/icons/shield-user.svg);
+  background-image: url(./assets/icons/shield-user.svg);
 }
 /* just messing around now */
 nav ul li#nav-favorite a {
-  background-image: url(/assets/icons/book-heart.svg);
+  background-image: url(./assets/icons/book-heart.svg);
 }
 
 nav ul li.active {
