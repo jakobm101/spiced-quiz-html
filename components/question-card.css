@@ -71,7 +71,7 @@
   top: -1rem;
   right: -1rem;
 
-  background-image: url(/assets/icons/bookmark.svg);
+  background-image: url(../assets/icons/bookmark.svg);
   background-position: center;
   background-size: cover;
   height: 3rem;
@@ -89,5 +89,5 @@
 }
 
 .card__bookmarktoggle--active {
-  background-image: url(/assets/icons/bookmark-check.svg);
+  background-image: url(../assets/icons/bookmark-check.svg);
 }
