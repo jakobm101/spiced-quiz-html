@@ -39,6 +39,9 @@ nav ul li#nav-profile a {
 nav ul li#nav-favorite a {
   background-image: url(../assets/icons/book-heart.svg);
 }
+nav ul li#nav-manage a {
+  background-image: url(../assets/icons/square-plus.png);
+}
 
 nav ul li.active {
   background-color: var(--bg);
