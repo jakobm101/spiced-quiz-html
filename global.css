@@ -5,6 +5,8 @@
 /* border: grey 1px solid; */
 /* border-radius: 25px; */
 /* } */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 
 :root {
   --color: black;
@@ -12,6 +14,8 @@
 }
 
 * {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
   color: var(--color);
   padding: 0;
   margin: 0;
