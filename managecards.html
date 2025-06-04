@@ -15,13 +15,43 @@
       <ul>
         <li id="nav-home"><a href="index.html">Home</a></li>
         <li id="nav-favorite"><a href="bookmarks.html">Favorites</a></li>
-        <li class="active" id="nav-manage"><a href="managecards.html">Manage</a></li>
+        <li class="active" id="nav-manage">
+          <a href="managecards.html">Manage</a>
+        </li>
         <li id="nav-profile"><a href="profile.html">Profile</a></li>
-
       </ul>
     </nav>
     <main>
-      <section data-js='cardContainer' class="quiz">
+      <section class="quiz" data-js="creatorContainer">
+        <form action="" data-js="creatorForm" class="quiz__card">
+          <label for="inputQuestion">question</label>
+          <input
+            required
+            id="inputQuestion"
+            data-js="inputQuestion"
+            type="text"
+            class="quiz__card__question"
+          />
+          <label for="inputAnswer">answer</label>
+          <input
+            required
+            type="text"
+            id="inputAnswer"
+            data-js="inputAnswer"
+            class="quiz__card__question"
+          />
+          <label for="inputTags">tags</label>
+          <input
+            type="text"
+            id="inputTags"
+            data-js="inputTags"
+            class="quiz__card__question"
+          />
+          <input type="submit" value="submit" />
+          <input type="reset" value="reset" />
+        </form>
+      </section>
+      <section data-js="cardContainer" class="quiz">
         <article class="quiz__card">
           <h2 class="quiz__card__question">What is Jakob's favorite fruit?</h2>
           <button data-js="showAnswer1" class="showAnswer">Show answer</button>
