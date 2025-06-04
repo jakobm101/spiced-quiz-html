@@ -1,18 +1,19 @@
 console.clear();
 console.log("⭐️ Welcome to J Town ⭐️");
+let numberOfQuestions = 3;
 const answers = [];
 const showAnswers = [];
-let numberOfQuestions = 3;
+const bookmark = document.querySelector('[data-js=bookmark]')
+console.log(bookmark);
+
 
 for(let counter = 1; counter <= numberOfQuestions; counter++){
   answers.push(document.querySelector(`[data-js=answer${counter}]`));
   showAnswers.push(document.querySelector(`[data-js=showAnswer${counter}]`));
-  // console.log(showAnswers[counter-1]);
   showAnswers[counter - 1].addEventListener("click", () => {
     answers[counter - 1].toggleAttribute("hidden");
   });
 
 }
-// answers[0].removeAttribute("hidden");
-console.log(answers);
-console.log(showAnswers);
+
+
