@@ -2,7 +2,7 @@ nav {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: beige;
+  background-color: var(--bg);
   z-index: 111;
   box-shadow: 0 0 2rem 0 darkslategray, inset 0 -5px 2cap 0 chartreuse;
 }
@@ -41,12 +41,12 @@ nav ul li#nav-favorite a {
 }
 
 nav ul li.active {
-  background-color: white;
-  box-shadow: 0 0 3rem 1rem white;
+  background-color: var(--bg);
+  box-shadow: 0 0 3rem 1rem white, inset 0 0 3rem 1rem white;
 
-  border: 3.5px solid black;
+  border: 3.5px solid var(--color);
 }
 
 nav ul li:hover {
-  border: 3px solid white;
+  border: 3px solid var(--bg);
 }

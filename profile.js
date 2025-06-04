@@ -1,8 +1,10 @@
 console.clear();
 const darkMode = document.querySelector("[data-js=darkMode]");
-// console.log(darkMode);
 const head = document.head;
-const darkCss = `<link rel="stylesheet" href="darkmode.css">`;
+const darkCss = document.createElement("link");
+darkCss.rel = "stylesheet";
+darkCss.href = "darkmode.css";
+darkMode.addEventListener("input", () =>
+   darkMode.checked ? head.appendChild(darkCss) : head.removeChild(darkCss)
+);
 
- head.innerHTML += darkCss;
-console.log(head);

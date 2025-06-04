@@ -42,6 +42,11 @@
   flex-flow: row wrap;
   align-items: center;
 }
+.profile__statistic__value img {
+  border-radius: 50px;
+  background-color: rgba(255,255,255,0.4);;
+  box-shadow: 0 0 1rem 1rem rgba(255, 255, 255, 0.4);
+}
 
 .settings {
   background: var(--bg);
