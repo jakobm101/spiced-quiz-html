@@ -33,6 +33,7 @@ creatorForm.addEventListener("submit", (event) => {
   numberOfQuestions++;
   createCard(inputQuestion.value, inputAnswer.value, inputTags.value);
   addListeners(numberOfQuestions);
+  event.target.reset()
 });
 
 function createCard(
