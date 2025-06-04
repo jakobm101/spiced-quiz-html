@@ -1,7 +1,7 @@
 header {
     position: relative;
     width: 100%;
-    background-color: aliceblue;
+    background-color: var(--bg);
     text-align: center;
     border-radius: 0;
     z-index: 111px;
