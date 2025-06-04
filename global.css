@@ -5,8 +5,13 @@
 /* border: grey 1px solid; */
 /* border-radius: 25px; */
 /* } */
+:root {
+  --color: black;
+  --bg: white;
+}
 
 * {
+  color: var(--color);
   padding: 0;
   margin: 0;
   list-style-type: none;
