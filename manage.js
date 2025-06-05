@@ -30,22 +30,38 @@ const creatorForm = document.querySelector("[data-js=creatorForm]");
 const inputQuestion = document.querySelector("[data-js=inputQuestion]");
 const inputAnswer = document.querySelector("[data-js=inputAnswer]");
 const inputTags = document.querySelector("[data-js=inputTags]");
-const charCountQuestion = document.querySelector('[data-js="charCountQuestion"]')
+const charCountQuestion = document.querySelector(
+  '[data-js="charCountQuestion"]'
+);
+const charCountAnswer = document.querySelector('[data-js="charCountAnswer"]')
 
-console.log(charCountQuestion.textContent);
-
-
+// Submit
 creatorForm.addEventListener("submit", (event) => {
   event.preventDefault();
   numberOfQuestions++;
   createCard(inputQuestion.value, inputAnswer.value, inputTags.value);
   addListeners(numberOfQuestions);
-  event.target.reset()
+  event.target.reset();
 });
-inputQuestion.addEventListener('input', (event) => {
-  charCountQuestion.textContent = `${100 - event.target.value.length} characters left`
-  
-})
+
+// Question character counter
+inputQuestion.addEventListener("input", (event) => {
+  const maxLength = inputQuestion.getAttribute("maxlength");
+
+  charCountQuestion.textContent = `${
+    maxLength - event.target.value.length
+  } characters left`;
+  if (event.target.value.length) {
+    charCountQuestion.style.color = "red";
+  }
+});
+
+// Answer character counter
+inputAnswer.addEventListener("input", (event) => {
+  const maxLength = event.target.getAttribute("maxlength");
+  const length = event.target.value.length
+  charCountAnswer.textContent = `${maxLength - length} characters left`
+});
 
 function createCard(
   question = "What is love",
