@@ -24,10 +24,17 @@ function addListeners(count, quantity = count) {
 }
 addListeners(1, numberOfQuestions);
 
+///////////////////////////////////////////////////////
+// Form creator
 const creatorForm = document.querySelector("[data-js=creatorForm]");
 const inputQuestion = document.querySelector("[data-js=inputQuestion]");
 const inputAnswer = document.querySelector("[data-js=inputAnswer]");
 const inputTags = document.querySelector("[data-js=inputTags]");
+const charCountQuestion = document.querySelector('[data-js="charCountQuestion"]')
+
+console.log(charCountQuestion.textContent);
+
+
 creatorForm.addEventListener("submit", (event) => {
   event.preventDefault();
   numberOfQuestions++;
@@ -35,6 +42,10 @@ creatorForm.addEventListener("submit", (event) => {
   addListeners(numberOfQuestions);
   event.target.reset()
 });
+inputQuestion.addEventListener('input', (event) => {
+  charCountQuestion.textContent = `${100 - event.target.value.length} characters left`
+  
+})
 
 function createCard(
   question = "What is love",
