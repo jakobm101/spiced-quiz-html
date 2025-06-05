@@ -20,3 +20,10 @@ input {
 form.quiz__card {
     flex-flow: row wrap;
 }
+
+.form__charCount {
+    color: grey;
+    width: 100%;
+    text-align: right;
+    align-self: start;
+}

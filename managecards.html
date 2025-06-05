@@ -31,7 +31,9 @@
             data-js="inputQuestion"
             type="text"
             class="quiz__card__question"
+            maxlength="100"
           />
+          <p class="form__charCount">100 characters allowed</p>
           <label for="inputAnswer">answer</label>
           <input
             required
@@ -39,16 +41,20 @@
             id="inputAnswer"
             data-js="inputAnswer"
             class="quiz__card__question"
+            maxlength="100"
           />
+          <p class="form__charCount">100 characters allowed</p>
           <label for="inputTags">tags</label>
           <input
             type="text"
             id="inputTags"
             data-js="inputTags"
             class="quiz__card__question"
+            maxlength="100"
           />
+          <p class="form__charCount">100 characters allowed</p>
           <input type="submit" value="submit" class="showAnswer" />
-          <input type="reset" value="reset" class="showAnswer"/>
+          <input type="reset" value="reset" class="showAnswer" />
         </form>
       </section>
       <section data-js="cardContainer" class="quiz">
