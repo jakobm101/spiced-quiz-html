@@ -11,6 +11,8 @@
 :root {
   --color: black;
   --bg: white;
+  /* --green: olivedrab; */
+  --green: chartreuse;
 }
 
 * {

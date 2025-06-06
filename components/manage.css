@@ -1,29 +1,42 @@
 label {
-    width: 20%;
-    text-transform: capitalize;
-    font-size: larger;
+  width: 20%;
+  text-transform: capitalize;
+  font-size: larger;
 }
 
 input {
-    box-shadow: inset 0 2px 1rem 0 cornflowerblue;
-    border: none;
-    border-radius: 10px;
+  box-shadow: inset 0 2px 1rem 0 cornflowerblue;
+  border: none;
+  border-radius: 10px;
 }
 
- input[type='submit'], input[type='reset']{
-    width: 30%;
-    border-radius: 15px;
+input[type="submit"],
+input[type="reset"] {
+  width: 30%;
+  border-radius: 15px;
 }
-
-
 
 form.quiz__card {
-    flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .form__charCount {
-    color: grey;
-    width: 100%;
-    text-align: right;
-    align-self: start;
+  color: grey;
+  width: 100%;
+  text-align: right;
+  align-self: start;
+}
+
+/* form { */
+  .form__success {
+  *, .form__charCount {
+    color: white;
+  }
+  background: var(--green);
+  input {
+    box-shadow: 0 0 1rem 0 white;
+  }
+  input[type="submit"] {
+    background: var(--green);
+  }
 }

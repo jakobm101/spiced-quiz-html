@@ -33,46 +33,47 @@ const inputTags = document.querySelector("[data-js=inputTags]");
 const charCountQuestion = document.querySelector(
   '[data-js="charCountQuestion"]'
 );
-const charCountAnswer = document.querySelector('[data-js="charCountAnswer"]')
+const charCountAnswer = document.querySelector('[data-js="charCountAnswer"]');
 
 // Submit
 creatorForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const formData = new FormData(event.target)
-  const question = formData.inputQuestion
-  const answer = formData.inputAnswer
-  const tags = formData.inputTags
-  
+  const formData = new FormData(event.target);
+  const question = formData.inputQuestion;
+  const answer = formData.inputAnswer;
+  const tags = formData.inputTags;
+
   numberOfQuestions++;
-  createCard(question.value, answer.value, tags.value);
+  createCard(question, answer, tags);
   addListeners(numberOfQuestions);
-  event.target.reset();
-  // event.target.style.add('border', 'green')
+  event.target.classList.add("form__success");
+  setTimeout(() => {
+    event.target.reset();
+    charCountQuestion.textContent = ""
+    charCountAnswer.textContent = ""
+    event.target.classList.remove("form__success");
+  }, 300);
 });
 
 // Question character counter
 inputQuestion.addEventListener("input", (event) => {
-  const maxLength = inputQuestion.getAttribute("maxlength");
+  const maxLength = event.target.getAttribute("maxlength");
 
   charCountQuestion.textContent = `${
     maxLength - event.target.value.length
   } characters left`;
   if (+event.target.value.length === +maxLength) {
     charCountQuestion.style.color = "red";
-    console.log(charCountQuestion.textContent);
-
   } else {
-    charCountQuestion.style.color = ''
+    charCountQuestion.style.color = "";
   }
 });
 
 // Answer character counter
 inputAnswer.addEventListener("input", (event) => {
   const maxLength = event.target.getAttribute("maxlength");
-  const length = event.target.value.length
-  charCountAnswer.textContent = `${maxLength - length} characters left`
-  console.log(charCountAnswer.textContent);
-  
+  const length = event.target.value.length;
+  charCountAnswer.textContent = `${maxLength - length} characters left`;
 });
 
 function createCard(
