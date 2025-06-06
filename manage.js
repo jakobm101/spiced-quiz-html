@@ -57,8 +57,12 @@ inputQuestion.addEventListener("input", (event) => {
   charCountQuestion.textContent = `${
     maxLength - event.target.value.length
   } characters left`;
-  if (event.target.value.length) {
+  if (+event.target.value.length === +maxLength) {
     charCountQuestion.style.color = "red";
+    console.log(charCountQuestion.textContent);
+
+  } else {
+    charCountQuestion.style.color = ''
   }
 });
 
@@ -67,6 +71,8 @@ inputAnswer.addEventListener("input", (event) => {
   const maxLength = event.target.getAttribute("maxlength");
   const length = event.target.value.length
   charCountAnswer.textContent = `${maxLength - length} characters left`
+  console.log(charCountAnswer.textContent);
+  
 });
 
 function createCard(
