@@ -38,8 +38,12 @@ const charCountAnswer = document.querySelector('[data-js="charCountAnswer"]')
 // Submit
 creatorForm.addEventListener("submit", (event) => {
   event.preventDefault();
+  const question = event.target.inputQuestion
+  const answer = event.target.inputAnswer
+  const tags = event.target.inputTags
+  
   numberOfQuestions++;
-  createCard(inputQuestion.value, inputAnswer.value, inputTags.value);
+  createCard(question.value, answer.value, tags.value);
   addListeners(numberOfQuestions);
   event.target.reset();
 });
