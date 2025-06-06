@@ -39,9 +39,11 @@ const charCountAnswer = document.querySelector('[data-js="charCountAnswer"]');
 creatorForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
-  const question = formData.inputQuestion;
-  const answer = formData.inputAnswer;
-  const tags = formData.inputTags;
+  const data = Object.fromEntries(formData);
+  const question = data.inputQuestion;
+  console.log({question})
+  const answer = data.inputAnswer;
+  const tags = data.inputTags;
 
   numberOfQuestions++;
   createCard(question, answer, tags);
@@ -49,8 +51,8 @@ creatorForm.addEventListener("submit", (event) => {
   event.target.classList.add("form__success");
   setTimeout(() => {
     event.target.reset();
-    charCountQuestion.textContent = ""
-    charCountAnswer.textContent = ""
+    charCountQuestion.textContent = "";
+    charCountAnswer.textContent = "";
     event.target.classList.remove("form__success");
   }, 300);
 });
@@ -85,7 +87,7 @@ function createCard(
   const tagSeparator = tags.trim().replace(/\s+/g, " ").split(" ");
   const tagButtons = tagSeparator
     .map((x) => `<button class="quiz__card__tags__tag">${x}</button>`)
-    .join();
+    .join("");
   card.classList.add("quiz__card");
   card.innerHTML = `
           <h2 class="quiz__card__question">${question}</h2>
